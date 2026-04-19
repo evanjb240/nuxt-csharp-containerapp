@@ -52,3 +52,8 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+/client/node_modules
+/client/.env
+.DS_Store
+/api/appsettings.Development.json
