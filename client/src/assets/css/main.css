@@ -1,0 +1,133 @@
+.primary-btn, .save-btn{
+    padding: 8px 15px;
+    border-radius: 3px;
+    border: 0 none black;
+    background: #0a437a;
+    color: white;
+    cursor: pointer;
+}
+.danger-btn{
+    padding: 8px 15px;
+    border-radius: 3px;
+    border: 0 none black;
+    background: rgb(169, 43, 43);
+    color: white;
+    cursor: pointer;
+}
+.primary-btn:hover, .save-btn:hover{
+    background-color: rgba(10, 67, 122, 0.75);
+    color: white;
+}
+.danger-btn:hover{
+    background-color: rgba(139, 0, 0, 0.75);
+    color: white;
+}
+
+.align-center{
+    display:flex;
+    align-items: center;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-reverse-col{
+    flex-direction: column-reverse;
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-5{
+    display:flex;
+    gap:5px;
+}
+
+.flex-10{
+    display:flex;
+    gap:10px;
+}
+
+.gap-10{
+    gap:10px;
+}
+
+.label-container{
+    display:flex;
+    gap:10px;
+}
+
+.label-container > :first-child {
+    width: 7rem;
+    font-weight: 600;
+}
+
+.margin-top-10{
+    margin-top: 10px;
+}
+
+.margin-top-20{
+    margin-top: 20px;
+}
+
+.margin-bottom-10{
+    margin-bottom: 10px;
+}
+.margin-bottom-20{
+    margin-bottom: 20px;
+}
+
+.width-full {
+    width: 100%;
+}
+
+.width-half {
+    width: 50%;
+}
+
+.width-quarter {
+    width: 25%;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+.link-card{
+    padding:5px;
+    border: gray;
+    border-radius: 3px;
+    border-style:solid;
+    margin-bottom: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.tag{
+    padding:5px;
+    border:gray;
+    border-radius: 5px;
+    border-style:solid;
+}
+
+h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input, textarea, select{
+    padding: 5px;
+    min-height:25px;
+}
+
+@media screen and (max-width: 1000px) {
+    ul {
+        padding-inline-start: 10px;
+    }
+}

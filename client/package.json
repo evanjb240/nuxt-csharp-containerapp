@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "engines": {
+    "node": "25.2.1"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "fetch-swagger": "curl -k https://localhost:8003/swagger/v1/swagger.json -o swagger.json",
+    "gen:api": "npx openapi-typescript-codegen --input swagger.json --output src/api --client fetch",
+    "sync": "npm run fetch-swagger && npm run gen:api"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^3.0.2",
+    "nuxt": "^4.4.2",
+    "openapi-typescript-codegen": "^0.30.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@auth0/auth0-vue": "^2.3.3",
+    "@vuepic/vue-datepicker": "^12.1.0",
+    "@zhuowenli/vue-feather-icons": "^5.0.2",
+    "add": "^2.0.6",
+    "feather-icons": "^4.29.0",
+    "yarn": "^1.22.19"
+  }
+}
