@@ -1,5 +1,5 @@
 {
-  "name": "sample-app-llc",
+  "name": "sample-app",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -8,7 +8,7 @@
     "dev:api": "cd ./api && ASPNETCORE_ENVIRONMENT=Development dotnet watch --no-hot-reload",
     "dev": "concurrently \"npm run dev:client\" \"npm run dev:api\"",
     "production:client": "cd ./client && npm run generate",
-    "production:api": "dotnet publish ./api/sample-app-llc.csproj -o ./artifacts",
+    "production:api": "dotnet publish ./api/sample-app.csproj -o ./artifacts",
     "production": "npm run production:client && npm run production:api",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
