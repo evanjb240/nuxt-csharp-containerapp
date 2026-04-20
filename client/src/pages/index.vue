@@ -18,7 +18,7 @@
 <script setup lang="ts">
 import type { Link } from '~/types/Link';
 
-const backgroundImage = `url('~/assets/images/coding_background.png')`;
+const backgroundImage = `url('~/assets/images/sample.png')`;
 
 const linkGroup = ref<Link[]>([
     { link: '/Projects', text: 'Projects'},
