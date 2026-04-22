@@ -34,6 +34,13 @@ export default defineNuxtConfig({
   srcDir: 'src/',
   ssr: false,
   compatibilityDate: '2024-08-09',
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
+    }
+  },
   hooks: {
     'pages:extend' (pages) {
       function setMiddleware (pages: NuxtPage[]) {
