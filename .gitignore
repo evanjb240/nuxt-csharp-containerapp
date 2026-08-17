@@ -56,6 +56,7 @@ node_modules
 /client/.nuxt
 /client/node_modules
 /client/.env
+/client/.output
 /client/swagger.json
 .DS_Store
 /api/appsettings.Development.json

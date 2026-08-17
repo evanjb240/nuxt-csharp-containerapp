@@ -60,11 +60,6 @@ if (enableDatabase)
     // Register CockroachDb connection provider
     builder.Services.AddSingleton<ICockroachDbConnectionProvider, CockroachDbConnectionProvider>();
 }
-
-builder.Services.AddOpenApi();
-builder.Services.AddControllers();
-builder.Services.AddOptions();
-
 if (enableAuth0)
 {
     builder.Services.AddSingleton<IAuthorizationHandler, HasScopeHandler>();
@@ -77,6 +72,10 @@ if(enableEmailing){
     builder.Services.AddHttpClient<ResendClient>();
     builder.Services.AddTransient<IResend, ResendClient>();
 }
+
+builder.Services.AddOpenApi();
+builder.Services.AddControllers();
+builder.Services.AddOptions();
 
 
 if (builder.Environment.IsDevelopment())

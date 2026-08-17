@@ -13,9 +13,4 @@ html,body, #__nuxt, #__layout{
   width: 100%!important;
   background-color: #0a437a;
 }
-
-@font-face {
-  font-family: 'Balivia';
-  src: url('~/assets/fonts/Balivia.ttf');
-}
 </style>
