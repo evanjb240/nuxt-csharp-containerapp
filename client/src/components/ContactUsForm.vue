@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div :class="alignment">
         <h1 class="page-title">Contact Us</h1>
         <p class="page-description">Have questions or want to work together? Send us a message!</p>
         <form @submit.prevent="submitForm" class="contact-form">
@@ -15,6 +15,9 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import type { Contact } from '~/api/models/Contact';
+const props = defineProps<{
+    alignment: string;
+}>();
 const form = ref<Contact>({
     name: '',
     email: '',
