@@ -34,7 +34,7 @@
 
 <script setup lang="ts">
 import type { Link } from '~/types/Link'
-import BusinessLogo from './BusinessLogo.vue'
+import BusinessLogo from '../business/BusinessLogo.vue'
 
 const props = withDefaults(
     defineProps<{

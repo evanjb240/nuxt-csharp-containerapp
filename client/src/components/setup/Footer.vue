@@ -76,7 +76,7 @@
     </footer>
 </template>
 <script setup lang="ts">
-import BusinessLogo from '~/components/BusinessLogo.vue';
+import BusinessLogo from '~/components/business/BusinessLogo.vue';
 const requestEstimate = ref(false);
 </script>
 
