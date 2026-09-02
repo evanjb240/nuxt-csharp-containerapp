@@ -23,5 +23,7 @@
 </template>
 
 <script setup lang="ts">
+import { Auth0Context } from '~/composables/Auth0Context';
+
   const { user, isAuthenticated } = Auth0Context();
 </script>

@@ -5,11 +5,13 @@
             <div class="container">
                 <slot></slot>
             </div>
-            <footer>
-            </footer>
+            <Footer />
         </div>
     </div>
 </template>
+<script setup lang="ts">
+    import Footer from '~/components/setup/Footer.vue';
+</script>
 <style>
 .main{
     display: flex;
@@ -25,17 +27,6 @@
     width:90%;
     background-color: whitesmoke;
     padding:20px;
-}
-footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #333;
-    height: auto;
-    width: 100vw;
-    padding-top: 40px;
-    color: #fff;
 }
 .centered{
   display:flex;
