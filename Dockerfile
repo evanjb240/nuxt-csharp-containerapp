@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1.7-labs
 
 # --- Node frontend build stage ---
-FROM node:20-alpine AS frontend
+FROM node:26-alpine AS frontend
 WORKDIR /app/client
 COPY client/package*.json ./
 RUN npm ci
