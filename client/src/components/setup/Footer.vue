@@ -15,7 +15,7 @@
                 <button to="/contactus" class="footer-cta-button" @click="requestEstimate = !requestEstimate">
                     Request a Free Estimate
                 </button>
-                <ContactUsForm  v-show="requestEstimate"/>
+                <ContactUsForm alignment="align-center flex-column"  v-show="requestEstimate"/>
             </div>
         </section>
 
@@ -36,11 +36,11 @@
             <div class="footer-column">
                 <h3>Services</h3>
 
-                <NuxtLink to="/services#NewConstruction">
+                <NuxtLink to="/about">
                     Planning
                 </NuxtLink>
 
-                <NuxtLink to="/services#Remodeling">
+                <NuxtLink to="/Profile">
                     Modeling
                 </NuxtLink>
             </div>
@@ -77,6 +77,7 @@
 </template>
 <script setup lang="ts">
 import BusinessLogo from '~/components/business/BusinessLogo.vue';
+import ContactUsForm from '~/components/form/ContactUsForm.vue';
 const requestEstimate = ref(false);
 </script>
 

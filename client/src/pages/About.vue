@@ -21,6 +21,7 @@
 </template>
 <script setup lang="ts">
   import { ref } from 'vue';
+  import Expander from '~/components/general/Expander.vue';
 
   const activeProjectsAccordion = ref(1);
   

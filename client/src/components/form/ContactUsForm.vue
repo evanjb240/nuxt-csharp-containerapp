@@ -85,6 +85,7 @@ function validateForm() {
 .contact-form {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 15px;
     max-width: 500px;
 }
